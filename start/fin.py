@@ -1,4 +1,5 @@
 import praw
+import sys, os
 
 reddit = praw.Reddit(
 client_id = 'Eb9FIjUfJ8zg8A',
@@ -21,3 +22,28 @@ for submission in hot_python:
                                                                            submission.visited))
 subreddit.subscribe()
 
+# Arguments on first line forbidden when not using vertical alignment.
+foo = long_function_name(var_one, var_two,
+    var_three, var_four)
+
+# Further indentation required as indentation is not distinguishable.
+def long_function_name(
+    var_one, var_two, var_three,
+    var_four):
+    print(var_one)
+    
+    # No: operators sit far away from their operands
+income = (gross_wages +
+          taxable_interest +
+          (dividends - qualified_dividends) -
+          ira_deduction -
+          student_loan_interest)
+if not foo is None:
+    spam( ham[ 1 ], { eggs: 2 } )
+    f = lambda x: 2*x
+    
+    
+try:
+    import platform_specific_module
+except ImportError:
+    platform_specific_module = None
