@@ -40,6 +40,14 @@ income = (gross_wages +
           student_loan_interest)
 if not foo is None:
     spam( ham[ 1 ], { eggs: 2 } )
+    def foo(x):
+    if x >= 0:
+        return math.sqrt(x)
+
+    def bar(x):
+        if x < 0:
+            return
+         return math.sqrt(x)
     f = lambda x: 2*x
     
     
